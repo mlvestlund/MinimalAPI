@@ -86,4 +86,4 @@ Example: POST https://localhost:1234/link
 ![Image of ER Diagram for MinimalAPI DB](Diagrams/ER_diagram.png)
 
 ### Sequence Diagram
-![Image of Sequence Diagram for MinimalAPI](Diagrams/Sequence_diagram.png)
+![Image of Sequence Diagram for MinimalAPI](Diagrams/Sequence_diagram.jpg)
