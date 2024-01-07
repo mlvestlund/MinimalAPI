@@ -18,64 +18,64 @@ This is a minimal API that can GET and POST to a local database which stores per
 Start program in VS, copy URL with domain and port number from the console and copy it to Insomnia. Below is each possible path to add to your URL described, including how to use them and what they do.
 
 ### Fetch all persons in database
-HTTP method: GET
-Path: "/persons"
-Example: GET https://localhost:1234/persons
+HTTP method: GET  
+Path: "/persons"  
+Example: GET https://localhost:1234/persons  
 
 ### Fetch all intrests for a chosen person
-HTTP method: GET
-Path: "/interests/{PersonID}"
-Example: GET https://localhost:1234/interests/1
+HTTP method: GET  
+Path: "/interests/{PersonID}"  
+Example: GET https://localhost:1234/interests/1  
 
 ### Fetch all links for a chosen person
-HTTP method: GET
-Path: "/links/{PersonID}"
-Example: GET https://localhost:1234/links/1
+HTTP method: GET  
+Path: "/links/{PersonID}"  
+Example: GET https://localhost:1234/links/1  
 
 ### Creates new interests and links it to a chosen person
-HTTP method: POST
-Path: "/interest"
-JSON format:
-{
+HTTP method: POST  
+Path: "/interest"  
+JSON format:  
+{  
 	"PersonID": {PersonID},  
  	"Interest": {  
   		"InterestName": "",  
     		"InterestDescription": ""  
 	}  
- }
- Example: POST https://localhost:1234/interest/1
+ }  
+ Example: POST https://localhost:1234/interest/1  
 {  
 	"PersonID": 1,  
  	"Interest": {  
   		"InterestName": "Fishing",  
     		"InterestDescription": "Tricking fishes to bite hooks"  
 	}  
- }
+ }  
 
 ### Links a chosen person to a chosen interest
-HTTP method: POST
-Path: "/personinterest"
-JSON format:
+HTTP method: POST  
+Path: "/personinterest"  
+JSON format:  
 {  
 	"PersonID": {PersonID},  
  	"InterestID": {InterestID}  
 }  
-Example: POST https://localhost:1234/personinterest
+Example: POST https://localhost:1234/personinterest  
 {  
 	"PersonID": 1,  
  	"InterestID": 2  
-}
+}  
 
 ### Add new URL links associated with a person and interest
-HTTP method: POST
-Path: "/link"
-JSON format:
+HTTP method: POST  
+Path: "/link"  
+JSON format:  
 {  
 	"LinkURL": "",  
  	"PersonID": {PersonID},  
   	"InterestID": {InterestID}  
-}
-Example: POST https://localhost:1234/link
+}  
+Example: POST https://localhost:1234/link  
 {  
 	"LinkURL": "www.fishing.com",  
  	"PersonID": 1,  
