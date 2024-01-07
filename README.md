@@ -81,3 +81,9 @@ Example: POST https://localhost:1234/link
  	"PersonID": 1,  
   	"InterestID": 1  
 }
+
+### ER Diagram
+![Image of ER Diagram for MinimalAPI DB](ER_diagram.png)
+
+### Sequence Diagram
+![Image of Sequence Diagram for MinimalAPI](Sequence_diagram.png)
