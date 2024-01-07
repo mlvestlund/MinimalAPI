@@ -37,21 +37,20 @@ HTTP method: POST
 Path: "/interest"
 JSON format:
 {
-  "PersonID": {PersonID},
-  "Interest": {
-    "InterestName": "",
-    "InterestDescription": ""
-  }
-}
-Example: POST https://localhost:1234/interest/1
+	"PersonID": {PersonID},
+ 	"Interest": {
+  		"InterestName": "",
+    		"InterestDescription": ""
+	}
+ }
+ Example: POST https://localhost:1234/interest/1
 {
-  "PersonID": 1,
-  "Interest": {
-    "InterestName": "Fishing",
-    "InterestDescription": "Tricking fishes to bite hooks"
-  }
-}
-
+	"PersonID": 1,
+ 	"Interest": {
+  		"InterestName": "Fishing",
+    		"InterestDescription": "Tricking fishes to bite hooks"
+	}
+ }
 
 ### Links a chosen person to a chosen interest
 HTTP method: POST
@@ -59,12 +58,12 @@ Path: "/personinterest"
 JSON format:
 {
 	"PersonID": {PersonID},
-	"InterestID": {InterestID}
+ 	"InterestID": {InterestID}
 }
 Example: POST https://localhost:1234/personinterest
 {
 	"PersonID": 1,
-	"InterestID": 2
+ 	"InterestID": 2
 }
 
 ### Add new URL links associated with a person and interest
@@ -73,12 +72,12 @@ Path: "/link"
 JSON format:
 {
 	"LinkURL": "",
-	"PersonID": {PersonID},
-	"InterestID": {InterestID}
+ 	"PersonID": {PersonID},
+  	"InterestID": {InterestID}
 }
 Example: POST https://localhost:1234/link
 {
 	"LinkURL": "www.fishing.com",
-	"PersonID": 1,
-	"InterestID": 1
+ 	"PersonID": 1,
+  	"InterestID": 1
 }
